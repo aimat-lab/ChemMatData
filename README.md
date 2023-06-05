@@ -22,8 +22,5 @@ we encourage you to contribute by creating a pull request. Here's how you can do
 We appreciate your contribution and look forward to incorporating your suggested datasets into our growing collection!
 
 <!-- CONTACT -->
-## Contact
-
-Jana Zeller - jana.zeller@student.kit.edu
-
-A project of the [AiMat Group](https://aimat.iti.kit.edu/) at KIT
+## About Us
+An open-source project hosted by the [AiMat Group](https://aimat.iti.kit.edu/) at KIT
