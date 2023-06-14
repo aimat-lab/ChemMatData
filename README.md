@@ -1,6 +1,6 @@
-<img src="images/ChemMatData_logo_final.png" width="700">
-
 # Global collection of molecular and materials datasets
+
+<img src="images/ChemMatData_logo_final.png" width="700">
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
