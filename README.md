@@ -1,5 +1,6 @@
 # ChemMatData
-![Chem Mat Data logo](images/ChemMatData_logo_final.png)
+<img src="images/ChemMatData_logo_final.png" alt= “Chem Mat Data logo” width="500">
+
 ## Global collection of molecular and materials datasets
 
 <!-- ABOUT THE PROJECT -->
