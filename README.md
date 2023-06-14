@@ -25,9 +25,16 @@ Alternatively, please send a link to a missing dataset to Jana (jana.zeller@stud
 
 We appreciate your contribution and look forward to incorporating your suggested datasets into our growing collection!
 
+<!-- CONTRIBUTORS -->
+## List of contributors
+
+Send us pull requests or emails with new datasets if you want to see your name here!
+
 <!-- CONTACT -->
 ## About Us
 An open-source project hosted by the [AiMat Group](https://aimat.iti.kit.edu/) at the [Karlsruhe Institute of Technology (KIT)](https://www.kit.edu/).
 
 <a href="https://aimat.science"><img src="images/AiMat_logo_purple.png" width="300"></a>
+
+
 
