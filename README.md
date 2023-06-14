@@ -1,4 +1,6 @@
-# Overview over chemical datasets
+# ChemMatData
+![Chem Mat Data logo](images/ChemMatData_logo_final.png)
+## Global collection of molecular and materials datasets
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
@@ -24,3 +26,5 @@ We appreciate your contribution and look forward to incorporating your suggested
 <!-- CONTACT -->
 ## About Us
 An open-source project hosted by the [AiMat Group](https://aimat.iti.kit.edu/) at KIT
+![AiMat group logo](images/AiMat_logo_purple.png)
+
