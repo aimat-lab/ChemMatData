@@ -27,7 +27,7 @@ We appreciate your contribution and look forward to incorporating your suggested
 
 <!-- CONTACT -->
 ## About Us
-An open-source project hosted by the [AiMat Group](https://aimat.iti.kit.edu/) at KIT
+An open-source project hosted by the [AiMat Group](https://aimat.iti.kit.edu/) at the Karlsruhe Institute of Technology (KIT).
 
 <a href="https://aimat.science"><img src="images/AiMat_logo_purple.png" width="300"></a>
 
