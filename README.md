@@ -21,6 +21,8 @@ we encourage you to contribute by creating a pull request. Here's how you can do
 4. Push to the Branch (`git push origin feature/AmazingDataset`)
 5. Open a Pull Request
 
+Alternatively, please send a link to a missing dataset to Jana (jana.zeller@student.kit.edu) and Pascal (pascal.friederich@kit.edu).
+
 We appreciate your contribution and look forward to incorporating your suggested datasets into our growing collection!
 
 <!-- CONTACT -->
