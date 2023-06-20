@@ -1,0 +1,547 @@
+[
+    {
+        "Dataset Name": "QM9",
+        "Domain": "Quantum Mechanics",
+        "Short Description": "QM9 is a comprehensive dataset that provides geometric, energetic, electronic and thermodynamic properties for a subset of GDB-17 database, comprising 134 thousand stable organic molecules with up to nine heavy atoms. All molecules are modeled using density functional theory (B3LYP/6-31G(2df,p) based DFT)",
+        "#Tasks": 16,
+        "#Compounds": 134000,
+        "Task Type": "Regression",
+        "Data Type": "SMILES, 3D coordinates",
+        "DownloadLink": "http://quantum-machine.org/datasets/#:~:text=Available%20via-,figshare,-.",
+        "Papers" : [
+            {
+                "Name": "Enumeration of 166 billion organic small molecules in the chemical universe database GDB-17",
+                "Link": "http://pubs.acs.org/doi/abs/10.1021/ci300415d"
+            },
+            {
+                "Name": "Quantum chemistry structures and properties of 134 kilo molecules",
+                "Link": "http://quantum-machine.org/datasets/#:~:text=A.%20von%20Lilienfeld%2C-,Quantum%20chemistry%20structures%20and%20properties%20of%20134%20kilo%20molecules,-%2C%20Scientific%20Data"
+            }
+        ]
+    },
+    {
+        "Dataset Name": "PCQM4Mv2",
+        "Domain": "Quantum Mechanics",
+        "Short Description": "Based on the PubChemQC, we define a meaningful ML task of predicting DFT-calculated HOMO-LUMO energy gap of molecules given their 2D molecular graphs. The HOMO-LUMO gap is one of the most practically-relevant quantum chemical properties of molecules since it is related to reactivity, photoexcitation, and charge transport.",
+        "#Tasks": 1,
+        "#Compounds": 3378606,
+        "Task Type": "Regression",
+        "Data Type": "SMILES",
+        "DownloadLink": "(https://ogb.stanford.edu/docs/lsc/pcqm4mv2/#dataset)",
+        "Papers": []
+    },
+    {
+        "Dataset Name": "Alchemy",
+        "Domain": "Quantum Mechanics",
+        "Short Description": "The dataset comprises of 12 quantum mechanical properties of 119,487 organic molecules with up to 14 heavy atoms, sampled from the GDB MedChem database.",
+        "#Tasks": 12,
+        "#Compounds": 202579,
+        "Task Type": "Regression",
+        "Data Type": "SMILES, 3D Coordinates",
+        "DownloadLink": "https://chrsmrrs.github.io/datasets/docs/datasets/",
+        "Papers": [
+            {
+                "Name": "Alchemy: A Quantum Chemistry Dataset for Benchmarking AI Models",
+                "Link": "https://arxiv.org/pdf/1906.09427.pdf"
+            }
+        ]
+    },
+    {
+        "Dataset Name": "BACE",
+        "Domain": "Biophysics",
+        "Short Description": "The BACE dataset provides quantitative (IC50) and qualitative (binary label) binding results for a set of inhibitors of human β-secretase 1 (BACE-1)",
+        "#Tasks": 2,
+        "#Compounds": 1522,
+        "Task Type": "Regression & Classification",
+        "Data Type": "SMILES",
+        "DownloadLink": "https://moleculenet.org/datasets-1",
+        "Papers": []
+    },
+    {
+        "Dataset Name": "Freesolv",
+        "Domain": "Physical Chemistry",
+        "Short Description": "A collection of experimental and calculated hydration free energies for small molecules in water. The calculated values are derived from alchemical free energy calculations using molecular dynamics simulations.",
+        "#Tasks": 1,
+        "#Compounds": 643,
+        "Task Type": "Regression",
+        "Data Type": "SMILES",
+        "DownloadLink": "https://moleculenet.org/datasets-1#:~:text=organic%20small%20molecules.-,FreeSolv,-%3A%20Experimental%20and%20calculated), [weilab.math.msu.edu](https://weilab.math.msu.edu/DataLibrary/2D/#ref5:~:text=4-,FreeSolv,-Solvation%20free%20energy",
+        "Papers": [
+            {
+                "Name": "FreeSolv: a database of experimental and calculated hydration free energies, with input files",
+                "Link": "https://pubmed.ncbi.nlm.nih.gov/24928188/"
+            }
+        ]
+    },
+    {
+        "Dataset Name": "ESOL (delaney)",
+        "Domain": "Physical Chemistry",
+        "Short Description": "Water solubility data(log solubility in mols per litre) for common organic small molecules.",
+        "#Tasks": 1,
+        "#Compounds": 1128,
+        "Task Type": "Regression",
+        "Data Type": "SMILES",
+        "DownloadLink": "https://moleculenet.org/datasets-1#:~:text=modelled%20small%20molecules.-,ESOL,-%3A%20Water%20solubility%20data, https://weilab.math.msu.edu/DataLibrary/2D/#ref5:~:text=5-,ESOL,-ESOL%20(delaney)%20is",
+        "Papers": [
+            {
+                "Name": "ESOL: Estimating Aqueous Solubility Directly from Molecular Structure",
+                "Link": "https://pubs.acs.org/doi/10.1021/ci034243x"
+            }
+        ]
+    },
+    {
+        "Dataset Name": "Lipophilicity",
+        "Domain": "Physical Chemistry",
+        "Short Description": "Experimental results of octanol/water distribution coefficient(logD at pH 7.4).",
+        "#Tasks": 1,
+        "#Compounds": 4200,
+        "Task Type": "Regression",
+        "Data Type": "SMILES",
+        "DownloadLink": "https://moleculenet.org/datasets-1#:~:text=molecules%20in%20water.-,Lipophilicity,-%3A%20Experimental%20results%20of, https://weilab.math.msu.edu/DataLibrary/2D/#ref5:~:text=3%2C%205-,Lipophilicity,-SMILES%20strings%20are",
+        "Papers": []
+    },
+    {
+        "Dataset Name": "MUV",
+        "Domain": "Biophysics",
+        "Short Description": "Subset of PubChem BioAssay by applying a refined nearest neighbor analysis, designed for validation of virtual screening techniques.",
+        "#Tasks": 17,
+        "#Compounds": 93087,
+        "Task Type": "Classification",
+        "Data Type": "SMILES",
+        "DownloadLink": "https://moleculenet.org/datasets-1#:~:text=high%2Dthroughput%20screening.-,MUV,-%3A%20Subset%20of%20PubChem",
+        "Papers": [
+            {
+                "Name": "MoleculeNet: A Benchmark for Molecular Machine Learning",
+                "Link": "https://arxiv.org/abs/1703.00564"
+            }
+        ]
+    },
+    {
+        "Dataset Name": "HIV",
+        "Domain": "Biophysics",
+        "Short Description": "Experimentally measured abilities to inhibit HIV replication.",
+        "#Tasks": 1,
+        "#Compounds": 41127,
+        "Task Type": "Classification",
+        "Data Type": "SMILES",
+        "DownloadLink": "https://moleculenet.org/datasets-1#:~:text=virtual%20screening%20techniques.-,HIV,-%3A%20Experimentally%20measured%20abilities",
+        "Papers": [
+            {
+                "Name": "MoleculeNet: a benchmark for molecular machine learning",
+                "Link": "https://pubs.rsc.org/en/content/articlehtml/2018/sc/c7sc02664a"
+            }
+        ]
+    },
+    {
+        "Dataset Name": "AIDS",
+        "Domain": "Biophysics",
+        "Short Description": "The DTP AIDS Antiviral Screen has checked tens of thousands of compounds for evidence of anti-HIV activity. Available are screening results and chemical structural data on compounds that are not covered by a confidentiality agreement.",
+        "#Tasks": 2,
+        "#Compounds": 2000,
+        "Task Type": "Classification",
+        "Data Type": "molecular graph",
+        "DownloadLink": "https://chrsmrrs.github.io/datasets/docs/datasets/#:~:text=%E2%80%93-,AIDS,-alchemy_full",
+        "Papers": [
+            {
+                "Name": "IAM Graph Database Repository for Graph Based Pattern Recognition and Machine Learning",
+                "Link": "https://DownloadLink.springer.com/chapter/10.1007/978-3-540-89689-0_33"
+            },
+            {
+                "Name": "AIDS Antiviral Screen Data (2004)",
+                "Link": "https://wiki.nci.nih.gov/display/NCIDTPdata/AIDS+Antiviral+Screen+Data"
+            }
+        ]
+    },
+    {
+        "Dataset Name": "PDBbind",
+        "Domain": "Biophysics",
+        "Short Description": "Binding affinities for bio-molecular complexes, both structures of proteins and ligands are provided.",
+        "#Tasks": 1,
+        "#Compounds": 11908,
+        "Task Type": "Regression",
+        "Data Type": "SMILES, 3D coordinates",
+        "DownloadLink": "https://moleculenet.org/datasets-1#:~:text=inhibit%20HIV%20replication.-,PDBbind,-%3A%20Binding%20affinities%20for",
+        "Papers": [
+            {
+                "Name": "Comparative assessment of scoring functions on a diverse test set",
+                "Link": "https://pubmed.ncbi.nlm.nih.gov/19358517/"
+            }
+        ]
+    },
+    {
+        "Dataset Name": "BBBP",
+        "Domain": "Physiology",
+        "Short Description": "Binary labels of blood-brain barrier penetration(permeability).",
+        "#Tasks": 1,
+        "#Compounds": 2039,
+        "Task Type": "Classification",
+        "Data Type": "SMILES",
+        "DownloadLink": "https://moleculenet.org/datasets-1), https://weilab.math.msu.edu/DataLibrary/2D/#ref5:~:text=5-,BBBP,-Blood%E2%80%93brain%20barrier",
+        "Papers": [
+            {
+                "Name": "MoleculeNet: a benchmark for molecular machine learning",
+                "Link": "https://pubs.rsc.org/en/content/articlehtml/2018/sc/c7sc02664a"
+            }
+        ]
+    },
+    {
+        "Dataset Name": "Tox21",
+        "Domain": "Physiology",
+        "Short Description": "Qualitative toxicity measurements on 12 biological targets, including nuclear receptors and stress response pathways.",
+        "#Tasks": 12,
+        "#Compounds": 7831,
+        "Task Type": "Classification",
+        "Data Type": "SMILES",
+        "DownloadLink": "https://moleculenet.org/datasets-1#:~:text=barrier%20penetration(permeability).-,Tox21,-%3A%20Qualitative%20toxicity%20measurements",
+        "Papers": [
+            {
+                "Name": "MoleculeNet: a benchmark for molecular machine learning",
+                "Link": "https://pubs.rsc.org/en/content/articlehtml/2018/sc/c7sc02664a"
+            }
+        ]
+    },
+    {
+        "Dataset Name": "ToxCast",
+        "Domain": "Physiology",
+        "Short Description": "Toxicology data for a large library of compounds based on in vitro high-throughput screening, including experiments on over 600 tasks.",
+        "#Tasks": 617,
+        "#Compounds": 8575,
+        "Task Type": "Classification",
+        "Data Type": "SMILES",
+        "DownloadLink": "https://moleculenet.org/datasets-1#:~:text=stress%20response%20pathways.-,ToxCast,-%3A%20Toxicology%20data%20for",
+        "Papers": [
+            {
+                "Name": "MoleculeNet: a benchmark for molecular machine learning",
+                "Link": "https://pubs.rsc.org/en/content/articlehtml/2018/sc/c7sc02664a"
+            }
+        ]
+    },
+    {
+        "Dataset Name": "SIDER",
+        "Domain": "Physiology",
+        "Short Description": "Database of marketed drugs and adverse drug reactions (ADR), grouped into 27 system organ classes.",
+        "#Tasks": 27,
+        "#Compounds": 1427,
+        "Task Type": "Classification",
+        "Data Type": "SMILES",
+        "DownloadLink": "https://moleculenet.org/datasets-1#:~:text=over%20600%20tasks.-,SIDER,-%3A%20Database%20of%20marketed",
+        "Papers": [
+            {
+                "Name": "MoleculeNet: a benchmark for molecular machine learning",
+                "Link": "https://pubs.rsc.org/en/content/articlehtml/2018/sc/c7sc02664a"
+            }
+        ]
+    },
+    {
+        "Dataset Name": "ClinTOX",
+        "Domain": "Physiology",
+        "Short Description": "Qualitative data of drugs approved by the FDA and those that have failed clinical trials for toxicity reasons.",
+        "#Tasks": 2,
+        "#Compounds": 1478,
+        "Task Type": "Classification",
+        "Data Type": "SMILES",
+        "DownloadLink": "https://moleculenet.org/datasets-1#:~:text=system%20organ%20classes.-,ClinTox,-%3A%20Qualitative%20data%20of, https://weilab.math.msu.edu/DataLibrary/2D/#ref5:~:text=5-,ClinTox,-The%20ClinTox%20dataset",
+        "Papers": [
+            {
+                "Name": "MoleculeNet: a benchmark for molecular machine learning",
+                "Link": "https://pubs.rsc.org/en/content/articlehtml/2018/sc/c7sc02664a"
+            }
+        ]    
+    },
+    {
+        "Dataset Name": "Quantitative toxicity - LD50",
+        "Domain": "Physiology",
+        "Short Description": "The oral rat LD50 dataset (LD50).",
+        "#Tasks": 1,
+        "#Compounds": 7413,
+        "Task Type": "Regression",
+        "Data Type": "SMILES",
+        "DownloadLink": "https://weilab.math.msu.edu/DataLibrary/2D/#ref5:~:text=1-,Quantitative%20toxicity,-LD50",
+        "Papers": [
+            {
+                "Name": "Quantitative Toxicity Prediction Using Topology Based Multitask Deep Neural Networks",
+                "Link": "https://users.math.msu.edu/users/weig/PaperName/p222.pdf"
+            },
+            {
+                "Name": "Algebraic graph-assisted bidirectional transformers for molecular property prediction",
+                "Link": "https://www.nature.com/articles/s41467-021-23720-w.pdf"
+            }
+        ]
+    },
+    {
+        "Dataset Name": "Quantitative toxicity - IGC50",
+        "Domain": "Physiology",
+        "Short Description": "Tetrahymena pyriformis IGC50 dataset (IGC50).",
+        "#Tasks": 1,
+        "#Compounds": 1792,
+        "Task Type": "Regression",
+        "Data Type": "SMILES",
+        "DownloadLink": "https://weilab.math.msu.edu/DataLibrary/2D/#ref5:~:text=1-,Quantitative%20toxicity,-LD50",
+        "Papers": [
+            {
+                "Name": "Quantitative Toxicity Prediction Using Topology Based Multitask Deep Neural Networks",
+                "Link": "https://users.math.msu.edu/users/weig/PaperName/p222.pdf"
+            },
+            {
+                "Name": "Algebraic graph-assisted bidirectional transformers for molecular property prediction",
+                "Link": "https://www.nature.com/articles/s41467-021-23720-w.pdf"
+            }
+        ]
+    },
+    {
+        "Dataset Name": "Quantitative toxicity - LC50",
+        "Domain": "Physiology",
+        "Short Description": "96 h fathead minnow LC50 dataset.",
+        "#Tasks": 1,
+        "#Compounds": 813,
+        "Task Type": "Regression",
+        "Data Type": "SMILES",
+        "DownloadLink": "https://weilab.math.msu.edu/DataLibrary/2D/#ref5:~:text=1-,Quantitative%20toxicity,-LD50",
+        "Papers": [
+            {
+                "Name": "Quantitative Toxicity Prediction Using Topology Based Multitask Deep Neural Networks",
+                "Link": "https://users.math.msu.edu/users/weig/PaperName/p222.pdf"
+            },
+            {
+                "Name": "Algebraic graph-assisted bidirectional transformers for molecular property prediction",
+                "Link": "https://www.nature.com/articles/s41467-021-23720-w.pdf"
+            }
+        ]
+    },
+    {
+        "Dataset Name": "Quantitative toxicity - LC50DM",
+        "Domain": "Physiology",
+        "Short Description": "The oral rat LD50 dataset (LD50).",
+        "#Tasks": 1,
+        "#Compounds": 353,
+        "Task Type": "Regression",
+        "Data Type": "SMILES",
+        "DownloadLink": "https://weilab.math.msu.edu/DataLibrary/2D/#ref5:~:text=1-,Quantitative%20toxicity,-LD50",
+        "Papers": [
+            {
+                "Name": "Quantitative Toxicity Prediction Using Topology Based Multitask Deep Neural Networks",
+                "Link": "https://users.math.msu.edu/users/weig/PaperName/p222.pdf"
+            },
+            {
+                "Name": "Algebraic graph-assisted bidirectional transformers for molecular property prediction",
+                "Link": "https://www.nature.com/articles/s41467-021-23720-w.pdf"
+            }
+        ]
+    },
+    {
+        "Dataset Name": "beet",
+        "Domain": "Physiology",
+        "Short Description": "The toxicity in honey bees (beet) dataset was extract from a study on the prediction of acute contact toxicity of pesticides in honeybees. The data set contains 254 compounds with their experimental values.",
+        "#Tasks": 2,
+        "#Compounds": 254,
+        "Task Type": "Classification",
+        "Data Type": "SMILES",
+        "DownloadLink": "https://weilab.math.msu.edu/DataLibrary/2D/#ref5:~:text=5-,beet,-The%20toxicity%20in",
+        "Papers": [
+            {
+                "Name": "Extracting Predictive Representations from Hundreds of Millions of Molecules",
+                "Link": "https://pubs.acs.org/doi/pdf/10.1021/acs.jpclett.1c03058"
+            }
+        ]
+    },
+    {
+        "Dataset Name": "logP",
+        "Domain": "",
+        "Short Description": "Partition coefficient datasets, including training set (8199 compounds), Food and Drug Administration (FDA) set, Star, and Nonstar set.",
+        "#Tasks": 3,
+        "#Compounds": "8199(train), 406(test-FDA), 223(test-Star), 43(test-Nonstar)",
+        "Task Type": "Regression",
+        "Data Type": "SMILES, 3D coordinates",
+        "DownloadLink": "https://weilab.math.msu.edu/DataLibrary/3D/#:~:text=Reference-,logP,-Partition%20coefficient%20datasets",
+        "Papers": [
+            {
+                "Name": "Algebraic graph-assisted bidirectional transformers for molecular property prediction",
+                "Link": "https://www.nature.com/articles/s41467-021-23720-w.pdf"
+            },
+            {
+                "Name": "TopP–S: Persistent Homology-Based Multi-Task Deep Neural Networks for Simultaneous Predictions of Partition Coefficient and Aqueous Solubility",
+                "Link": "https://users.math.msu.edu/users/weig/paper/p223.pdf"
+            }
+        ]
+    },
+    {
+        "Dataset Name": "logS(1)",
+        "Domain": "",
+        "Short Description": "Small aqueous solubility datasets.",
+        "#Tasks": 2,
+        "#Compounds": 1431,
+        "Task Type": "Regression",
+        "Data Type": "SMILES, 3D coordinates",
+        "DownloadLink": "https://weilab.math.msu.edu/DataLibrary/2D/#ref5:~:text=1%2C%203-,logS(1),-A%20diverse%20dataset",
+        "Papers": [
+            {
+                "Name": "TopP–S: Persistent Homology-Based Multi-Task Deep Neural Networks for Simultaneous Predictions of Partition Coefficient and Aqueous Solubility",
+                "Link": "https://users.math.msu.edu/users/weig/paper/p223.pdf"
+            }
+        ]
+    },
+    {
+        "Dataset Name": "DPP4",
+        "Domain": "",
+        "Short Description": "DPP-4 inhibitors (DPP4) was extract from ChEMBL with DPP-4 target. The data was processed by removing salt and normalizing molecular structure, with molecular duplication examination, leaving 3933 molecules.",
+        "#Tasks": 1,
+        "#Compounds": 3933,
+        "Task Type": "Regression",
+        "Data Type": "SMILES",
+        "DownloadLink": "https://weilab.math.msu.edu/DataLibrary/2D/#ref5:~:text=3%2C%205-,DPP4,-DPP%2D4%20inhibitors",
+        "Papers": [
+            {
+                "Name": "Extracting Predictive Representations from Hundreds of Millions of Molecules",
+                "Link": "https://pubs.acs.org/doi/pdf/10.1021/acs.jpclett.1c03058"
+            }
+        ]
+    },
+    {
+        "Dataset Name": "Ames",
+        "Domain": "",
+        "Short Description": "Ames mutagenicity. The dataset includes 6512 compounds and corresponding binary labels from Ames Mutagenicity results.",
+        "#Tasks": 1,
+        "#Compounds": 6512,
+        "Task Type": "Classification",
+        "Data Type": "SMILES",
+        "DownloadLink": "https://weilab.math.msu.edu/DataLibrary/2D/#ref5:~:text=3%2C%205-,Ames,-Ames%20mutagenicity.%20The",
+        "Papers": [
+            {
+                "Name": "Extracting Predictive Representations from Hundreds of Millions of Molecules",
+                "Link": "https://pubs.acs.org/doi/pdf/10.1021/acs.jpclett.1c03058"
+            }
+        ]
+    },
+    {
+        "Dataset Name": "DUD",
+        "Domain": "",
+        "Short Description": "A Directory of Useful Decoys (DUD).",
+        "#Tasks": 21,
+        "#Compounds": "between 31 and 365 actives and 1,344 and 15,560 decoys depending on target",
+        "Task Type": "Rank",
+        "Data Type": "SMILES",
+        "DownloadLink": "https://weilab.math.msu.edu/DataLibrary/2D/#:~:text=5-,DUD,-A%20Directory%20of",
+        "Papers": [
+            {
+                "Name": "Extracting Predictive Representations from Hundreds of Millions of Molecules",
+                "Link": "https://pubs.acs.org/doi/pdf/10.1021/acs.jpclett.1c03058"
+            }
+        ]
+    },
+    {
+        "Dataset Name": "MUV",
+        "Domain": "",
+        "Short Description": "Maximum Unbiased Validation (MUV) Data Sets for Virtual Screening.",
+        "#Tasks": 17,
+        "#Compounds": "30 actives and 1,500 decoys per target",
+        "Task Type": "Rank",
+        "Data Type": "SMILES",
+        "DownloadLink": "https://weilab.math.msu.edu/DataLibrary/2D/#ref5:~:text=5-,MUV,-Maximum%20Unbiased%20Validation",
+        "Papers": [
+            {
+                "Name": "Extracting Predictive Representations from Hundreds of Millions of Molecules",
+                "Link": "https://pubs.acs.org/doi/pdf/10.1021/acs.jpclett.1c03058"
+            }
+        ]
+    },
+    {
+        "Dataset Name": "Cocaine addiction datasets",
+        "Domain": "",
+        "Short Description": "The 36 cocaine-addiction related datasets are collected from ChEMDL database (https://www.ebi.ac.uk/chembl/) and literatures (references 1 and 2 in README file), which involve 32 cocaine-addiction protein targets. The labels are binding affinities to these targets.",
+        "#Tasks": 36,
+        "#Compounds": "between 114 and 6,923 depending on the target",
+        "Task Type": "Regression",
+        "Data Type": "SMILES",
+        "DownloadLink": "https://weilab.math.msu.edu/DataLibrary/2D/#ref6:~:text=5-,Cocaine%20addiction%20datasets,-The%2036%20cocaine",
+        "Papers": [
+            {
+                "Name": "Proteome-informed machine learning studies of cocaine addiction",
+                "Link": "https://weilab.math.msu.edu/DataLibrary/2D/#ref6:~:text=of%20cocaine%20addiction%22.-,PDF,-%5B7%5D%20Hongsong"
+            }
+        ]
+    },
+    {
+        "Dataset Name": "Cocaine addiction datasets 2",
+        "Domain": "",
+        "Short Description": "The 30 additional cocaine-addiction related datasets collected from ChEMDL database (https://www.ebi.ac.uk/chembl/), which involve 30 cocaine-addiction protein targets. The labels are binding affinities to these targets.",
+        "#Tasks": 36,
+        "#Compounds": "between 123 and 6,923 depending on the target",
+        "Task Type": "Regression",
+        "Data Type": "SMILES",
+        "DownloadLink": "https://weilab.math.msu.edu/DataLibrary/2D/Downloads/cocaine_addiction-datasets2.zip",
+        "Papers": [
+            {
+                "Name": "Proteome-informed machine learning studies of cocaine addiction",
+                "Link": "https://pubs.acs.org/doi/pdf/10.1021/acs.jpclett.1c03133?casa_token=H4K9rfMLmasAAAAA:_C3oLB_pkvc5Lbd-aklaIASqvHZwue_Z3ghqfUgBkjj4LtmD9kU4urhC5zT5zegGO2ncig5v3dL_Qg"
+            }
+        ]
+    },
+    {
+        "Dataset Name": "Drug_addiction_related",
+        "Domain": "",
+        "Short Description": "Receptors related to opioid or cocaine addiction.",
+        "#Tasks": 11,
+        "#Compounds": "between 815 and 11,297 depending on target",
+        "Task Type": "Regression",
+        "Data Type": "SMILES",
+        "DownloadLink": "https://weilab.math.msu.edu/DataLibrary/2D/Downloads/drug_addiction_related_WeiWeb_2D.zip",
+        "Papers": [
+            {
+                "Name": "TIDAL: Topology-Inferred Drug Addiction Learning",
+                "Link": "https://pubs.acs.org/doi/full/10.1021/acs.jcim.3c00046?casa_token=C4B_jMAbt4AAAAAA:BLEYP4-f1E8ZP1-3umVhxzrrXuGUzVLJkhOCFneHCeQOwXG6eb8e0NyVeOis8xBwz3jgxdawRDrKwQ"
+            }
+        ]
+    },
+    {
+        "Dataset Name": "hERG blocker/non-blocker datasets",
+        "Domain": "",
+        "Short Description": "Seven datasets are provided for the classification of hERG blocker/non-blockers. These datasets are from literatures and the original datasets are included.",
+        "#Tasks": 7,
+        "#Compounds": "between 927 and 203,853 (train) and 407 and 87,366 (test) depending on the task",
+        "Task Type": "Classification",
+        "Data Type": "SMILES",
+        "DownloadLink": "https://weilab.math.msu.edu/DataLibrary/2D/Downloads/hERG-classification.zip",
+        "Papers": [
+            {
+                "Name": "Virtual screening of DrugBank database for hERG blockers using topological Laplacian-assisted AI models",
+                "Link": "https://www.sciencedirect.com/science/article/pii/S0010482522011994"
+            }
+        ]
+    },
+    {
+        "Dataset Name": "Opioid use disorder datasets",
+        "Domain": "",
+        "Short Description": "75 datasets collected from ChEMDL database (https://www.ebi.ac.uk/chembl/) used in the machine-learning study of opioid use disorder. The labels are binding affinities to these targets.",
+        "#Tasks": 75,
+        "#Compounds": "between 268 and 6,298 depending on the task",
+        "Task Type": "Regression",
+        "Data Type": "SMILES",
+        "DownloadLink": "https://weilab.math.msu.edu/DataLibrary/2D/Downloads/OUD-datasets.zip",
+        "Papers": [
+            {
+                "Name": "Machine-learning Analysis of Opioid Use Disorder Informed by MOR, DOR, KOR, NOR and ZOR-Based Interactome Networks",
+                "Link": "https://arxiv.org/abs/2301.04815"
+            },
+            {
+                "Name": "Machine-learning Repurposing of DrugBank Compounds for Opioid Use Disorder",
+                "Link": "https://arxiv.org/abs/2303.00240"
+            }
+        ]
+    },
+    {
+        "Dataset Name": "SVS datasets",
+        "Domain": "",
+        "Short Description": "The 9 datasets for biomolecules interactions, including 4 regressions and 5 classfications.",
+        "#Tasks": 9,
+        "#Compounds": "between 186 and 11,188 depending on the task",
+        "Task Type": "Regression, Classification",
+        "Data Type": "SMILES",
+        "DownloadLink": "https://weilab.math.msu.edu/DataLibrary/2D/Downloads/SVS_datasets.zip",
+        "Papers": [
+            {
+                "Name": "SVSBI: Sequence-based virtual screening of biomolecular interactions",
+                "Link": "https://arxiv.org/abs/2212.13617"
+            }
+        ]
+    }
+]
