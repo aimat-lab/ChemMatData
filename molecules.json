@@ -37,7 +37,7 @@
         "#Tasks": 12,
         "#Compounds": 202579,
         "Task Type": "Regression",
-        "Data Type": "SMILES, 3D Coordinates",
+        "Data Type": "SMILES, 3D coordinates",
         "DownloadLink": "https://chrsmrrs.github.io/datasets/docs/datasets/",
         "Papers": [
             {
