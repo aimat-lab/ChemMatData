@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    
+    <link href="https://cdn.jsdelivr.net/gh/tofsjonas/sortable@latest/sortable.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/gh/tofsjonas/sortable@latest/sortable.min.js"></script>
+  
+    <script>
+      function mapToBadges(string, mapping) {
+        var cell = $("<div>")
+        var labels = string.split(", ");
+        for (label of labels) {
+          var color = 'secondary';
+          if (label in mapping) {
+            color = mapping[label];
+          }
+          var badge = $("<span>").addClass("badge bg-" + color).text(label);
+          cell.append(badge);
+        }
+        return cell;
+      }
+  
+      $(document).ready(function() {
+        $.getJSON("https://cdn.jsdelivr.net/gh/aimat-lab/ChemMatData@main/molecules.json", function(data) {
+          var tableBody = $("#table-body");
+  
+          data.forEach(function(item, id) {
+            var row = $("<tr>");
+            row.append($("<td value=\"Name\">").text(item["Dataset Name"]));
+            
+            domainCell = $("<td>");
+            const domainColorMap = {
+              'Quantum Mechanics': 'primary',
+              'Biophysics': 'danger',
+              'Physical Chemistry': 'success',
+              'Biophysics': 'dark',
+              'Physiology': 'info'
+            };
+            domainCell.append(mapToBadges(item['Domain'], domainColorMap));
+            row.append(domainCell);
+  
+            row.append($("<td> value=\"#Tasks\">").text(item["#Tasks"]));
+            row.append($("<td value=\"#Compounds\">").text(item["#Compounds"]));
+            
+            taskTypeCell = $("<td>");
+            const taskColorMap = {
+              'Regression': 'primary',
+              'Classification': 'warning',
+              'Rank': 'success'
+            };
+            taskTypeCell.append(mapToBadges(item['Task Type'], taskColorMap));
+            row.append(taskTypeCell);
+            
+            dataTypeCell = $("<td>");
+            const dataTypeColorMap = {
+              'molecular graph': 'primary',
+              '3D coordinates': 'warning',
+              'SMILES': 'success'
+            }
+            dataTypeCell.append(mapToBadges(item['Data Type'], dataTypeColorMap));
+            row.append(dataTypeCell);
+  
+            var infoButtonCell = $("<td>");
+            var infoButton = $("<button class=\"btn btn-primary\" type=\"button\" data-bs-toggle=\"modal\">");
+            infoButton.attr("data-bs-target", "#modal-" + id);
+            infoButton.text("More Info");
+            infoButtonCell.append(infoButton);
+            row.append(infoButtonCell);
+  
+            var modal = $("<div class=\"modal fade\">");
+            modal.attr("id", "modal-" + id);
+            modal.attr("tabindex", "-1");
+            modal.attr("role", "dialog");
+            modal.attr("aria-labelledby", "modal-" + id + "-label");
+            var modalDialog = $("<div class=\"modal-dialog\" role=\"document\">");
+            var modalContent = $("<div class=\"modal-content\">");
+            var modalHeader = $("<div class=\"modal-header\">");
+            var modalTitle = $("<h5 class=\"modal-title\">");
+            modalTitle.attr("id", "modal-" + id + "-label");
+            modalTitle.text(item["Dataset Name"]);
+  
+            var modalBody = $("<div class=\"modal-body\">");
+            var description = $("<p>").text(item["Short Description"])
+            modalBody.append(description);
+  
+            var referencesCell = $("<p>").text("References:\n")
+            referencesCell.append("<ul>")
+            console.log(item['Papers'])
+            for (paper of item['Papers']) {
+              var listItem = $("<li>");
+              var reference = $("<a>").attr("href", paper.Link).text(paper.Name);
+              listItem.append(reference);
+              referencesCell.append(listItem)
+            }
+            modalBody.append(referencesCell);
+  
+            var linkCell = $("<p>").text("Download here: ");
+            var links = item["DownloadLink"].split(", ")
+            for (link of links) {
+              var text = "Download"
+              try {
+                text = new URL(link).hostname
+              } catch (error) {
+                console.log(error)
+              }
+              var linkATag = $("<a>").attr("href", link).text(text);
+              linkCell.append(linkATag);
+              linkCell.append(" ");
+            }
+            modalBody.append(linkCell);
+  
+            var modalFooter = $("<div class=\"modal-footer\">");
+            var closeButton = $("<button type=\"button\" class=\"btn btn-secondary\" data-bs-dismiss=\"modal\">Close</button>");
+            modalHeader.append(modalTitle);
+            modalContent.append(modalHeader);
+            modalContent.append(modalBody);
+            modalContent.append(modalFooter);
+            modalFooter.append(closeButton);
+            modalDialog.append(modalContent);
+            modal.append(modalDialog);
+            row.append($("<td>").append(modal));
+  
+            tableBody.append(row);
+          });
+  
+          // Initialize the modal component
+          $(".modal").modal();
+        });
+      });
+    </script>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="padding: 24px">
+        <a class="navbar-brand" href="./index.html">ChemMatData</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="molecules.html">Molecules</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="materials.html">Materials</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    <h2 class="text-center">Molecules</h2>
+    <table class="table sortable">
+      <thead>
+        <tr>
+          <th data-field="Dataset Name">Dataset Name</th>
+          <th data-field="Domain">Domain</th>
+          <!-- <th data-field="Short Description">Short Description</th> -->
+          <th data-field="#Tasks">#Tasks</th>
+          <th data-field="#Compounds">#Compounds</th>
+          <th data-field="Task Type">Task Type</th>
+          <th data-field="Data Type">Data Type</th>
+          <th data-field="More Infos">More Infos</th>
+        </tr>
+      </thead>
+      <tbody id="table-body">
+      </tbody>
+    </table>
+  
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="aimat.science" class="nav-link px-2 text-muted">AiMat</a></li>
+        <li class="nav-item"><a href="https://aimat.iti.kit.edu/legals.php" class="nav-link px-2 text-muted">Legals</a></li>
+        <li class="nav-item"><a href="https://aimat.iti.kit.edu/datenschutz.php" class="nav-link px-2 text-muted">Privacy Policy</a></li>
+      </ul>
+      <p class="text-center text-muted">© 2023 AiMAT</p>
+    </footer>
+</body>
