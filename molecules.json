@@ -52,7 +52,7 @@
         "Short Description": "The BACE dataset provides quantitative (IC50) and qualitative (binary label) binding results for a set of inhibitors of human β-secretase 1 (BACE-1)",
         "#Tasks": 2,
         "#Compounds": 1522,
-        "Task Type": "Regression & Classification",
+        "Task Type": "Regression, Classification",
         "Data Type": "SMILES",
         "DownloadLink": "https://moleculenet.org/datasets-1",
         "Papers": []
