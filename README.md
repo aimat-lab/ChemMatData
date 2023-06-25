@@ -9,10 +9,10 @@
 Our main goal is to create a collaborative platform
 where we can gather and categorize various datasets,
 making them conveniently accessible in one place.
-We are actively collecting datasets for [molecules](https://github.com/aimat-lab/ChemMatData/blob/main/molecules.md) as well as [crystalline structures](https://github.com/aimat-lab/ChemMatData/blob/main/materials.md) to provide a comprehensive resource for researchers, scientists, and enthusiasts.
+We are actively collecting datasets for [molecules](https://github.com/aimat-lab/ChemMatData/blob/main/molecules.json) as well as [crystalline structures](https://github.com/aimat-lab/ChemMatData/blob/main/materials.json) to provide a comprehensive resource for researchers, scientists, and enthusiasts.
 
-See the list of all [molecular datasets](https://github.com/aimat-lab/ChemMatData/blob/main/molecules.md).
-See the list of all [materials datasets](https://github.com/aimat-lab/ChemMatData/blob/main/materials.md).
+See the list of all [molecular datasets](https://github.com/aimat-lab/ChemMatData/blob/main/molecules.json).
+See the list of all [materials datasets](https://github.com/aimat-lab/ChemMatData/blob/main/materials.json).
 
 ---
 <!-- CONTRIBUTING -->
