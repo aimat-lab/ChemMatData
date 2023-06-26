@@ -27,7 +27,7 @@
         "#Compounds": 3378606,
         "Task Type": "Regression",
         "Data Type": "SMILES",
-        "DownloadLink": "(https://ogb.stanford.edu/docs/lsc/pcqm4mv2/#dataset)",
+        "DownloadLink": "https://ogb.stanford.edu/docs/lsc/pcqm4mv2/#dataset",
         "Papers": []
     },
     {
