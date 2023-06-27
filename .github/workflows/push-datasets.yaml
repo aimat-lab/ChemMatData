@@ -1,5 +1,8 @@
 name: push-datasets
-on: push
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   push-dataset: 
