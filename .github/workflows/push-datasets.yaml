@@ -5,6 +5,8 @@ jobs:
   push-dataset: 
     runs-on: ubuntu-latest
     steps:
+      - name: checkout repository
+        uses: actions/checkout@v3
       - name: Upload materials.json to s3
         uses: shallwefootball/s3-upload-action@master
         id: S3-materials
