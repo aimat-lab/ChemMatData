@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Upload materials.json to s3
         uses: shallwefootball/s3-upload-action@master
-        id: S3
+        id: S3-materials
         with:
             aws_key_id: ${{secrets.AWS_KEY_ID}}
             aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
@@ -16,7 +16,7 @@ jobs:
 
       - name: Upload molecules.json to s3
         uses: shallwefootball/s3-upload-action@master
-        id: S3
+        id: S3-molecules
         with:
             aws_key_id: ${{secrets.AWS_KEY_ID}}
             aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
