@@ -1,5 +1,6 @@
 # ChemMatData
 ## Global collection of molecular and materials datasets
+Website at [aimat-lab.github.io/ChemMatData](https://aimat-lab.github.io/ChemMatData/index.html)
 
 <img src="images/ChemMatData_logo_final.png" width="700">
 
@@ -13,6 +14,9 @@ We are actively collecting datasets for [molecules](https://github.com/aimat-lab
 
 See the list of all [molecular datasets](https://github.com/aimat-lab/ChemMatData/blob/main/molecules.json).
 See the list of all [materials datasets](https://github.com/aimat-lab/ChemMatData/blob/main/materials.json).
+
+You can sort and explore all available datasets using our [website](https://aimat-lab.github.io/ChemMatData/index.html).
+
 
 ---
 <!-- CONTRIBUTING -->
